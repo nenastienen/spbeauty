@@ -9,24 +9,24 @@ const WrapperInput = styled.div`
 
 const Input = styled.input`
     outline: none;
-    border-radius: 0px;
-    border: solid #152842 1px;
-    background-color: #D9E2EF;
-    color: #152842;
+    padding-left: 15px !important;
+    border: solid #E2E8F0 1px;
+    background-color: #F8FAFC;
+    border-radius: 24px;
+    color: #94A3B8;
     width: 100%;
     &:hover {
-        background: linear-gradient(180deg, #DFEAF1 0%, #CFDDE8 100%);
+        opacity: .8;
     }
     &:focus {
-        background: white;
+        color: #0F172A;
     }
 `;
 
 const SearchIconWrapper = styled.div`
-    background-color: #4B759E;
     position: absolute;
     box-sizing:border-box;
-    right: 0px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
+    right: 5px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
     top:50%;
     transform: translateY(-50%);
 `;

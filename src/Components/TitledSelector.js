@@ -7,19 +7,21 @@ const Select = styled.select`
     -webkit-appearance: none !important; 
     appearance: none !important;
     outline: none;
-    border-radius: 0px;
-    border: solid #152842 1px;
-    background-color: #D9E2EF;
-    color: #666787;
+    font-size: 15px;
+    border-radius: 24px;
+    border: 1px solid #E2E8F0;
+    background-color: #F8FAFC;
+    padding: 8px 16px !important;
+    color: #0F172A;
     &:hover {
-        background-color: #D9E2EFB8;
+        opacity: .8;
     }
 `;
 
 function TitledSelector({title, options}) {
     const Title = title === undefined ? 
         (<div></div>) : 
-        (<div>{title}</div>);
+        (<div className="caption">{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
             {Title}
